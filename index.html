@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="manifest" href="manifest.json">
+    <title>test pwa</title>
 </head>
 
 <body>
+    <p>
+    <h1>test pwa</h1>
+    </p>
     <p>Click the button to get your coordinates.</p>
 
     <button onclick="getLocation()">Try It</button>
@@ -52,7 +56,7 @@
 
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js');
+            navigator.serviceWorker.register('./service-worker.js');
         }
     </script>
 </body>
